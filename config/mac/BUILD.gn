@@ -49,6 +49,7 @@ config("compiler") {
   }
 
   cflags += [ "-I../../../../rusty_v8/third_party/icu/source/common" ]
+  cflags += [ "-I../../../../third_party/icu/source/common" ]
 }
 
 # This is included by reference in the //build/config/compiler:runtime_library
