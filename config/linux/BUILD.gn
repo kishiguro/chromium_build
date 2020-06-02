@@ -103,10 +103,6 @@ if (use_glib) {
   }
 }
 
-# Temporally fix of ICU build.
-cflags += [ "-I../../../../rusty_v8/third_party/icu/source/common" ]
-cflags += [ "-I../../../../third_party/icu/source/common" ]
-
 # Ensures all exported symbols are added to the dynamic symbol table.  This is
 # necessary to expose Chrome's custom operator new() and operator delete() (and
 # other memory-related symbols) to libraries.  Otherwise, they might
